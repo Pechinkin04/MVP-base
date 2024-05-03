@@ -19,12 +19,14 @@
 		3BD3AC752BE4DC47005F528C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3AC742BE4DC47005F528C /* Comment.swift */; };
 		3BD3AC772BE4DDAA005F528C /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3AC762BE4DDAA005F528C /* MainPresenter.swift */; };
 		3BD3AC7D2BE4E105005F528C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD3AC7C2BE4E105005F528C /* MainViewController.xib */; };
-		3BD3AC7F2BE4E1EC005F528C /* ModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3AC7E2BE4E1EC005F528C /* ModelBuilder.swift */; };
+		3BD3AC7F2BE4E1EC005F528C /* AsselderModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3AC7E2BE4E1EC005F528C /* AsselderModelBuilder.swift */; };
 		3BD3AC842BE4E555005F528C /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3AC832BE4E555005F528C /* MainPresenterTest.swift */; };
 		3BD3AC862BE4F170005F528C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3AC852BE4F170005F528C /* NetworkService.swift */; };
 		3BD3AC8B2BE4F690005F528C /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3AC8A2BE4F690005F528C /* DetailPresenter.swift */; };
 		3BD3AC952BE4F977005F528C /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD3AC942BE4F977005F528C /* DetailViewController.xib */; };
 		3BD3AC962BE4F977005F528C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3AC932BE4F977005F528C /* DetailViewController.swift */; };
+		3BD3AC982BE5127A005F528C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3AC972BE5127A005F528C /* Router.swift */; };
+		3BD3AC9A2BE524BB005F528C /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3AC992BE524BB005F528C /* RouterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,12 +63,14 @@
 		3BD3AC742BE4DC47005F528C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		3BD3AC762BE4DDAA005F528C /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		3BD3AC7C2BE4E105005F528C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		3BD3AC7E2BE4E1EC005F528C /* ModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBuilder.swift; sourceTree = "<group>"; };
+		3BD3AC7E2BE4E1EC005F528C /* AsselderModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsselderModelBuilder.swift; sourceTree = "<group>"; };
 		3BD3AC832BE4E555005F528C /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 		3BD3AC852BE4F170005F528C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		3BD3AC8A2BE4F690005F528C /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		3BD3AC932BE4F977005F528C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3BD3AC942BE4F977005F528C /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		3BD3AC972BE5127A005F528C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		3BD3AC992BE524BB005F528C /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,8 @@
 			children = (
 				3BD3AC442BE4DC08005F528C /* AppDelegate.swift */,
 				3BD3AC462BE4DC08005F528C /* SceneDelegate.swift */,
-				3BD3AC7E2BE4E1EC005F528C /* ModelBuilder.swift */,
+				3BD3AC7E2BE4E1EC005F528C /* AsselderModelBuilder.swift */,
+				3BD3AC972BE5127A005F528C /* Router.swift */,
 				3BD3AC8D2BE4F826005F528C /* DetailModule */,
 				3BD3AC782BE4E0AD005F528C /* MainModule */,
 				3BD3AC872BE4F191005F528C /* ServiceLayer */,
@@ -188,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				3BD3AC832BE4E555005F528C /* MainPresenterTest.swift */,
+				3BD3AC992BE524BB005F528C /* RouterTest.swift */,
 			);
 			path = TestMainModule;
 			sourceTree = "<group>";
@@ -361,12 +367,13 @@
 			files = (
 				3BD3AC962BE4F977005F528C /* DetailViewController.swift in Sources */,
 				3BD3AC772BE4DDAA005F528C /* MainPresenter.swift in Sources */,
+				3BD3AC982BE5127A005F528C /* Router.swift in Sources */,
 				3BD3AC492BE4DC08005F528C /* MainViewController.swift in Sources */,
 				3BD3AC8B2BE4F690005F528C /* DetailPresenter.swift in Sources */,
 				3BD3AC452BE4DC08005F528C /* AppDelegate.swift in Sources */,
 				3BD3AC752BE4DC47005F528C /* Comment.swift in Sources */,
 				3BD3AC472BE4DC08005F528C /* SceneDelegate.swift in Sources */,
-				3BD3AC7F2BE4E1EC005F528C /* ModelBuilder.swift in Sources */,
+				3BD3AC7F2BE4E1EC005F528C /* AsselderModelBuilder.swift in Sources */,
 				3BD3AC862BE4F170005F528C /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BD3AC5C2BE4DC0A005F528C /* MVP_Level_OneTests.swift in Sources */,
+				3BD3AC9A2BE524BB005F528C /* RouterTest.swift in Sources */,
 				3BD3AC842BE4E555005F528C /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

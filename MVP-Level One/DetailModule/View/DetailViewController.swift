@@ -18,6 +18,12 @@ class DetailViewController: UIViewController {
 
         presenter.setComment()
     }
+    
+    @IBAction func tapAction(_ sender: Any) {
+        presenter.tap()
+    }
+    
+    
 }
 
 extension DetailViewController: DetailViewProtocol {

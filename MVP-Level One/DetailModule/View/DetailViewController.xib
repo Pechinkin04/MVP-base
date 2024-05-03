@@ -25,11 +25,21 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAy-Kr-d93">
+                    <rect key="frame" x="169.66666666666666" y="748" width="54" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Pop"/>
+                    <connections>
+                        <action selector="tapAction:" destination="-1" eventType="touchUpInside" id="NLE-gx-UuR"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IAy-Kr-d93" secondAttribute="bottom" constant="35" id="8rR-JE-9l7"/>
                 <constraint firstItem="yvO-Uu-w4m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="AAT-Fi-uK4"/>
+                <constraint firstItem="IAy-Kr-d93" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="B1G-m1-L1Q"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yvO-Uu-w4m" secondAttribute="trailing" constant="16" id="Bq2-Xa-FGz"/>
                 <constraint firstItem="yvO-Uu-w4m" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="McF-tD-o06"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yvO-Uu-w4m" secondAttribute="bottom" constant="150" id="t9G-UZ-sPi"/>
